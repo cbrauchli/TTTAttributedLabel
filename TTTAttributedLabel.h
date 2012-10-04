@@ -328,3 +328,9 @@ extern NSString * const kTTTBackgroundCornerRadiusAttributeName;
 - (void)attributedLabel:(TTTAttributedLabel *)label didSelectLinkWithTextCheckingResult:(NSTextCheckingResult *)result;
 
 @end
+
+extern inline CTTextAlignment CTTextAlignmentFromUITextAlignment(UITextAlignment alignment);
+extern inline CTLineBreakMode CTLineBreakModeFromUILineBreakMode(UILineBreakMode lineBreakMode);
+extern inline NSTextCheckingType NSTextCheckingTypeFromUIDataDetectorType(UIDataDetectorTypes dataDetectorType);
+extern inline NSDictionary * NSAttributedStringAttributesFromLabel(TTTAttributedLabel *label);
+extern inline NSAttributedString * NSAttributedStringByScalingFontSize(NSAttributedString *attributedString, CGFloat scale, CGFloat minimumFontSize);
